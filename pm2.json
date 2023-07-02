@@ -1,0 +1,17 @@
+{
+    "apps": {
+      "name": "midway-app",
+      "script": "./bootstrap.js",
+      "watch": false,
+      "ignore_watch": ["node_modules", "build", "logs"],
+      "out_file": "/home/data/logs/pm2_out.log",
+      "error_file": "/home/data/logs/pm2_error.log",
+      "max_memory_restart": "4G",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "exec_mode": "cluster_mode",
+      "instances": "max",
+      "autorestart": true
+    }
+  }
